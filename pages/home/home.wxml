@@ -1,2 +1,5 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!--pages/home/home.wxl-->
+<!-- 小程序的数据绑定 {{}}-->
+<view class="" hover-class="none" hover-stop-propagation="false">
+  {{name}}
+</view>
