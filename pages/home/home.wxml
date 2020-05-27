@@ -1,5 +1,26 @@
 <!--pages/home/home.wxl-->
 <!-- 小程序的数据绑定 {{}}-->
-<view class="" hover-class="none" hover-stop-propagation="false">
-  {{name}}
+<view>
+  {{ name }}
 </view>
+
+<!-- 列表展示 -->
+<view wx:for="{{ movies }}">
+  {{ index }}
+</view>
+
+<!-- 事件监听 -->
+<button size="mini" bindtap="handleBtnClick">+</button>
+<button size="mini" bindtap="delBtnClick">-</button>
+
+<!-- 获取用户信息 -->
+<button
+  size="mini"
+  open-type="getUserInfo"
+  bindgetuserinfo="handelGetUserInfo"
+>获取授权</button>
+<view> 当前计数：{{ counter }} </view>
+
+<!-- 展示用户信息 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>

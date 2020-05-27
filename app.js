@@ -1,5 +1,6 @@
 //app.js
 App({
+  //小程序初始化
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -33,7 +34,28 @@ App({
       }
     })
   },
+
+  //显示界面
+  onShow:function(){
+    // wx.getUserInfo({
+    //   success:function(res){
+    //     console.log(res)
+    //   }
+    // })
+  },
+
+  //隐藏界面
+  onHide:function(){
+
+  },
+
+  //错误
+  onError:function(){
+
+  },
+
   globalData: {
-    userInfo: null
+    name: 'chenzurong',
+    age:18
   }
 })
