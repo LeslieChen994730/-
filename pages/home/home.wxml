@@ -1,2 +1,39 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<text>text\n</text>
+
+<!-- 默认情况下text长安不能选中 -->
+<text selectable>你好，小程序\n</text>
+
+<!-- text属性space  ensp半个中文字符大小  emsp一个中文字符大小-->
+<text>hello wrold\n</text>
+<text space="nbsp">hello wrold\n</text>
+<text sapce="ensp">hello wrold\n</text>
+<text space="emsp">hello wrold\n</text>
+
+<!-- decode属性：是否解码文本 -->
+<text decode>5 &gt; 3\n</text>
+
+
+<!-- buttom组件 -->
+<!-- 基本使用(块级) -->
+<button>按钮</button>
+
+<!-- size属性（inline-block） -->
+<button size="mini">按钮</button>
+<button size="mini">按钮</button>
+
+<!-- type属性 -->
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<button size="mini" type="primary">按钮</button>
+
+<!-- plain镂空效果 -->
+<button size="mini" type="warn" plain>按钮</button>
+
+<!-- loading加载效果 -->
+<button size="mini" type="warn" plain loading>按钮</button>
+
+<!-- hover-class -->
+<button hover-class="pressed">按钮</button>
+
+
